@@ -1,6 +1,6 @@
 spring:
   application:
-    name: template
+    name: backups
   profiles:
     active:
   datasource:
@@ -52,7 +52,7 @@ server:
 
 custom:
   mock: true
-  username: admin@template.com
+  username: admin@backups.com
   password: 1234
   version: 1.0
   email-enabled: false
