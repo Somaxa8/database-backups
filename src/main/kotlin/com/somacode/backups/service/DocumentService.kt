@@ -39,6 +39,7 @@ class DocumentService {
         val millis = System.currentTimeMillis()
         document.name = "${document.id}D$millis$ext"
         document.description = ""
+        document.size = multipartFile.size
         document.tag = tag
         document.type = type
         val folder = getFolderFromType(type)

@@ -12,6 +12,7 @@ class Document(
         var baseName: String? = null,
         var extension: String? = null,
         var description: String? = null,
+        var size: Long? = null,
         var tag: String? = null,
         @Enumerated(EnumType.STRING)
         var type: Type? = null,
@@ -19,6 +20,6 @@ class Document(
         var url: String? = null
 ) {
 
-    enum class Type { IMAGE, DOCUMENT }
+    enum class Type { IMAGE, DOCUMENT, DATABASE }
 
 }
